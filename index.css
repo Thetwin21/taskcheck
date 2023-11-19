@@ -1,0 +1,94 @@
+form {
+     padding: 10px 15px;
+     margin-bottom: 10px;
+}
+form > div {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+
+}
+form > div > label{
+    font-size: medium;
+     font-weight: 600;
+     margin-bottom: 5px;
+
+}
+form > div > input{
+    font-size: medium;
+    background: #fff;
+    outline: none;
+    border: none;
+    box-shadow:  1px 1px 2px 5px #00000035;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+form button {
+     margin-top: 10px;
+     border-radius: 5px;
+}
+.allTask{
+    max-height: 300px;
+    overflow-y: auto;
+}
+li {
+  width: 100%;
+  min-height: 55px;
+  height: 55px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  background: #93c5fd;
+  margin: 0.5em 0 0.5em 0;
+  border-radius: 7px;
+  /* box-shadow: -3px -1px 32px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px -1px 32px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px -1px 32px 3px rgba(0, 0, 0, 0.75); */
+  overflow: hidden;
+}
+li>:first-child {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    flex-shrink: 1;
+}
+li>:first-child > :last-child {
+    font-size: 12px;
+    font-weight: 100;
+}
+li > div {
+    display: flex;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+    height: 100%;
+}
+li > div > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em 0.5em 1em;
+    background: #9ca3af;
+    min-height: 100%;
+}
+li > div > button > img {
+    width: 17px;
+    object-fit: contain;
+    /* height: 70%; */
+}
+li > div > button > :last-child {
+    width: 20px;
+    height: 100%;
+}
+li> :last-child > :last-child{
+    border-left: solid #000 2px;
+}
+.checked {
+    opacity: 0.8;
+    background: #0000006f;
+}
+.checked span {
+    text-decoration: line-through;
+    
+}

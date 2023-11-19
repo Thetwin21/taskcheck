@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2c348bb9ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Myweek 5 project</title>
+  </head>
+  <body>
+    <section
+      class="w-full overflow-x-hidden bg-blue-300 min-h-screen flex gap-y-3 flex-col items-center pb-4"
+    >
+      <div class="w-full flex px-7 text-blue-900 justify-between py-2 mb-3">
+        <h3 class="font-semibold text-2xl">Synegia</h3>
+        <h3 class="font-semibold text-2xl">Detwins project</h3>
+      </div>
+      <div
+        class="w-full grid grid-cols-1 md:grid-cols-2 max-w-lg md:max-w-2xl min-w-lg bg-blue-100 p-4 border-none rounded-lg shadow-md gap-x-5 justify-center items-center"
+      >
+        <div class="flex flex-col mt-7">
+          <div class="flex flex-col gap-y-3">
+            <h3 class="text-2xl font-semibold">Add Items:</h3>
+            <form
+              id="myForm"
+              action=""
+              class="flex flex-col justify-between shadow-md rounded-lg bg-blue-300 overflow-hidden"
+            >
+              <div>
+                <label for="task">Add Task</label>
+                <input
+                  id="input_field"
+                  class=""
+                  type="text"
+                  placeholder="Add items"
+                />
+              </div>
+              <div>
+                <label for="date">Choose Date</label>
+                <input type="date" name="" id="date_input" />
+              </div>
+              <div class="btn">
+                <button
+                  onclick="addItems()"
+                  class="py-2 px-4 cursor-pointer font-semibold bg-gray-400"
+                >
+                  Add
+                </button>
+              </div>
+            </form>
+            <p id="check" class="text-red-600 text-sm"></p>
+          </div>
+        </div>
+        <div class="h-full">
+          <h3 class="text-lg font-semibold my-3">My tasks</h3>
+          <div class="allTask">
+
+            <!-- My tasks -->
+            <ul id="container" class="w-full h-full flex flex-col"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
